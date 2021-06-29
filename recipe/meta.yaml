@@ -1,7 +1,7 @@
 {% set python_version = ">=3.6, <3.10" %}
 {% set name = "pytest_pytorch" %}
 {% set slug = "pytest-pytorch" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 {% set home = "https://github.com/Quansight/pytest-pytorch" %}
 
 package:
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8274a67f7ac569abe361c18ecaf3e16b67713716792c579eab25002ae1467ce5
+  sha256: bf0d4d7a5e618dba1a8503aa626a9711606b0f4733c0df1170fdaac9b3b25724
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install --no-deps -vv .
   noarch: python
 
